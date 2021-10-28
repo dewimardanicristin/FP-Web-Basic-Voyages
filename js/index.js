@@ -1,40 +1,70 @@
-var haslogin = localStorage.getItem('isLogin');
-
-const cekLogin = () =>{
-  if (haslogin == "true") {
-    return document.getElementById('right-content').innerHTML += 
-            `<div class="dropdown float-end">
-             <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-              <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
-            </a>
-            <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1" style="">
-              <li><a class="dropdown-item" href="#">New project...</a></li>
-              <li><a class="dropdown-item" href="#">Settings</a></li>
-              <li><a class="dropdown-item" href="#">Profile</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Sign out</a></li>
-            </ul>
-          </div>
-              <div class="dropdown">
-              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown button
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </div>
-          `
-  }
-  else{
-    return document.getElementById('right-content').innerHTML += 
-    `<a href="./daftar.html">
-        <button class="btn btn-outline-dark" type="submit">Daftar</button>
-      </a>
-      <a href="./login.html">
-        <button class="btn btn-dark hover" type="submit">Login</button>
-      </a>`
-  }
+var haslogin = localStorage.getItem("isLogin");
+const logout = () => {
+  localStorage.setItem("isLogin", false);
+  window.location.replace('../login.html');
 }
+
+const cekLogin = () => {
+  if (haslogin == "true") {
+ 
+    return (document.getElementById("container").innerHTML += ` <header
+            class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4">
+            <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+                <img src="/assets/logo.png" width="40" height="32" alt="">
+                <div class="fw-bolder ps-2">Voyagers</div>
+            </a>
+
+            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                <li class="m-2"><a href="./daftar_wisata.html"
+                        class="nav-link px-2 link-dark border-bottom border-dark border-2 navhover">Daftar
+                        wisata</a>
+                </li>
+                <li class="m-2"><a href="./koleksi-foto.html" class="nav-link px-2 link-dark navhover">Koleksi foto</a></li>
+            </ul>
+
+            <div class="col-md-3 text-end">
+            <div class="d-grid gap-3 d-md-flex justify-content-md-end">
+            <div class="dropdown">
+              <a href="#" class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa fa-user"></i>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-start" aria-labelledby="dropdownMenuButton1">
+                <li class="mb-3"><a href="./history.html" class="text-decoration-none"><span class="dropdown-item">Riwayat</span></a></li>
+                <li class="m-1"><button type="button" onclick="logout()" class="w-100 btn btn-primary">Keluar</button></li>
+              </ul>
+
+              
+            </div>
+        </header>
+          `);
+  } else {
+
+    return (document.getElementById(
+      "container"
+    ).innerHTML += `<header
+    class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4">
+    <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+        <img src="/assets/logo.png" width="40" height="32" alt="">
+        <div class="fw-bolder ps-2">Voyagers</div>
+    </a>
+
+    <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li class="m-2"><a href="./daftar_wisata.html"
+                class="nav-link px-2 link-dark border-bottom border-dark border-2 navhover">Daftar
+                wisata</a>
+        </li>
+        <li class="m-2"><a href="./koleksi-foto.html" class="nav-link px-2 link-dark navhover">Koleksi foto</a></li>
+    </ul>
+
+    <div class="col-md-3 text-end">
+    <a href="./daftar.html">
+        <button type="button" class="btn btn-outline-dark me-2">Sign-up</button>
+    </a>
+    <a href="./login.html">
+        <button type="button" class="btn btn-dark">Login</button>
+    </a>
+    </div>
+</header>`);
+  }
+};
 cekLogin();

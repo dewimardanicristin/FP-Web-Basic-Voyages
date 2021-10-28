@@ -30,7 +30,7 @@ function validate(e){
     
     if(password.value === getData.password && email.value===getData.email){
         localStorage.setItem("isLogin",true)
-        window.location = "./landingpage.html"
+        window.location = "/"
     }
     else if(password.value !== getData.password && email.value!==getData.email){
         alert("Periksa kembali username dan password anda")

@@ -73,3 +73,8 @@
 .black {
     color: black;
 }
+
+.dropdown-menu-start[data-bs-popper] {
+    left: auto!important;
+    right: 0!important;
+  }

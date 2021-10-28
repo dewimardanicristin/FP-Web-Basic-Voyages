@@ -8,6 +8,11 @@
    margin-top: 8%;
 }
 
+.dropdown-menu-start[data-bs-popper] {
+    left: auto!important;
+    right: 0!important;
+  }
+
 .form-login{
     padding: 50px;
     margin : 0px auto; 
