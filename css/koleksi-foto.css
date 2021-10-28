@@ -1,12 +1,10 @@
-body{
-    padding: 20px;
-  }
+
   .wrapper{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-gap: 5px;
   }
-  img{
+  .img-gal{
     width: 100%;
     border-radius: 20px;
   }

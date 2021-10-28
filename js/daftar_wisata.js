@@ -50,7 +50,7 @@ function printItems(data) {
         </div>
         <div class="product-detail-container">
             <div class="d-flex justify-content-between align-items-center">
-                <h6 class="mb-0">${data[i].type_tour}</h6> <span class="text-danger font-weight-bold">${data[i].price}</span>
+                <h6 class="mb-0">${data[i].title}</h6> <span class="text-danger font-weight-bold">${data[i].price}</span>
             </div>
             <div class="d-flex justify-content-between align-items-center mt-2">
               <div class="jenis_wisata"><i class="fa fa-map-marker" aria-hidden="true"></i><span> ${data[i].location_tour}</span></div>

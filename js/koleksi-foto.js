@@ -15,7 +15,7 @@ function printKoleksiFoto(data) {
   for (var i = 0; i < data.length; i++) {
     temp += `
   <div class="box">
-    <img src="${data[i].url_image}">
+    <img class="img-gal" src="${data[i].url_image}">
   </div>
   `
   }
