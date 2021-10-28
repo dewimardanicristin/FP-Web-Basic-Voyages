@@ -65,3 +65,11 @@
     box-shadow: 0 0 0 0.25rem rgb(255 99 71 / 25%) !important;
     background-color: tomato;
 }
+
+.rating-color {
+    color: orangered;
+}
+
+.black {
+    color: black;
+}
