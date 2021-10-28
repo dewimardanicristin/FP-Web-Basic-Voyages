@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width-device-width, initial-scale=1.0">
+<style>
+  *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.container{
+  width: 100%;
+  text-align: center;
+}
+h1{
+  font-weight: normal;
+  font-size: 35px;
+  position: relative;
+  margin: 40px  0;
+}
+.photo{
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+.pict{
+  position: relative;
+  height: 230px;
+  box-shadow: 3px 3px 5px lightgray;
+  cursor: pointer;
+}
+.pict img{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.pict::before{
+  content: "GALLERY";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  width: 100%;
+  margin-top: -100px;
+  opacity: 0;
+  transition: .3s;
+  transition-delay: .2s;
+  z-index: 1;
+}
+.pict:after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  border-radius: 10px;
+  height: 0;
+  background-color: rgba(0,0,0,.4);
+  transition: .3s;
+}
+.pict:hover::after{
+  height: 100%;
+}
+.pict:hover::before{
+  margin-top: 0;
+  opacity: 1;
+}
+  </style>
+<title>Koleksi Foto</title>
+</head>
+<body>
+<div class="container">
+  <h1> GALLERY</h1>
+</div>
+<div class="photo">
+  <div class="pict">
+    <img src="https://www.befreetour.com/img/attraction/kebun-raya-bali20191016150732.jpg">
+  </div>
+    <div class="pict">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsMo6Ofg_-f7zoDmNOqJsXLgxpoeF6MAw0NA&usqp=CAU">
+  </div>
+    <div class="pict">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQCdYD-GxlBtwI6qPENeVfmTYuQixjjhpnc6QQKv9uB3ql_oyT_QOnADw&s=10">
+  </div>
+    <div class="pict">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8vYtATGPJYfWO7uhM-3S8AsJINsHZQggBuvS5RTK8hpnbBtPFnsLneqo&s=10">
+  </div>
+    <div class="pict">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFEk4VD1iICV14mluFontNN0MdBMMeoQ-AFg&usqp=CAU">
+  </div>
+    <div class="pict">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL9Tv1D8AmxpwelE_egGaLAsALwzgIujdxMg&usqp=CAU">
+  </div>
+    <div class="pict">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS79LfnegFhUzqHYPcAgtMNUGP3oOBLLU3XQ&usqp=CAU">
+  </div>
+    <div class="pict">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFoyGEzn4j9obUl2Rh7_ioGsHHA2m6yYUG8w&usqp=CAU">
+  </div>
+    <div class="pict">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRbkzhW2sZibLswygfzr0FnirISbd51BEqmA&usqp=CAU">
+  </div>
+    <div class="pict">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCon__HGqlj_UmZlkxrkjAPEujwyydykb3Cw&usqp=CAU">
+  </div>
+    <div class="pict">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUgm9gK5HRR3W8hH0CjzX83yUpNY81om3U5g&usqp=CAU">
+  </div>
+  <div class="pict">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAv09i8lQEQhzdxDlRPbj9jIWAiRcTGZxF6A&usqp=CAU">
+  </div>
+    <div class="pict">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCQxRm8ew-LMTG-kIUrPyaRo2dmwy4WLjquA&usqp=CAU">
+  </div>
+    <div class="pict">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt6B4uaa0e6SIPRipzSmBHYfMwCtdF_IhzIg&usqp=CAU">
+  </div>
+    <div class="pict">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR88GHONdxrjhS5W1Dh4rHFJQlg8H10h93Byg&usqp=CAU">
+  </div>
+    <div class="pict">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvuRw_akuMFxZMMp3F4EOWrP8SQfiU9uoR_Q&usqp=CAU">
+  </div>
+    <div class="pict">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk7df7RwkrojrVI9Pu8FPx4Qu0ChizU_NX9w&usqp=CAU">
+  </div>
+    <div class="pict">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRd26vpCtJmViwcW3bTKcNUbO_OyuIFUuMkXA&usqp=CAU">
+  </div>
+    <div class="pict">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLgZCnKAkqfM2jn0aLzeGFQgA6iiR5IRuJXQ&usqp=CAU">
+  </div>
+    <div class="pict">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrI2c8KabVP5wsmd8Bv65lmFZBsH23oboVPw&usqp=CAU">
+  </div>
+    <div class="pict">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY_Qhdg-YUGIYn3XFhnY4us_cBOys2CrupBg&usqp=CAU">
+  </div>
+    <div class="pict">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIL_jJbfh4ocjqqG-Tvv5TDz-Y2TE732Pv_w&usqp=CAU">
+  </div>
+<div class="pict">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJDv_I3y1E9WQoA3pONss-uD_RFDZ1uhZ4FQ&usqp=CAU">
+  </div>
+    <div class="pict">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJ-Gh0TsPzJM4ECr8Fiodlob-SQHCvcVcg0Q&usqp=CAU">
+  </div>
+</body>
+</html>
