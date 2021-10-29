@@ -29,11 +29,11 @@ function searchItem(value, data) {
   var filterdata = [];
   for (var j = 0; j < data.length; j++) {
     value = value.toLowerCase();
-    var name = data[j].type_tour.toLowerCase();
+    var name = data[j].title.toLowerCase();
     if (name.includes(value)) {
       console.log("tes");
       filterdata.push(data[j]);
-      console.log(data[j].type_tour);
+      // console.log(data[j].title);
     }
   }
   printItems(filterdata);
