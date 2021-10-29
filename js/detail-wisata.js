@@ -2,6 +2,7 @@ const urlSearchParams = new URLSearchParams(window.location.search);
 const params = Object.fromEntries(urlSearchParams.entries());
 
 var haslogin = localStorage.getItem("isLogin");
+console.log(haslogin);
 
 const getData = async () => {
   try {
@@ -320,11 +321,11 @@ async function calculate() {
 }
 
 const CekPembayaran = (id) => {
-  if (haslogin) {
+  if (haslogin === "true") {
     calculate();
     console.log("berhasil");
     return `./pembayaran.html?bayar=${id}`;
   }
 
-  return `./index.html`;
+  return `./login.html`;
 };
